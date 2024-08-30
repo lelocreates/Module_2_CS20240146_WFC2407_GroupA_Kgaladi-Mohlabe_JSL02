@@ -24,6 +24,7 @@ const addNewGoal = () => {
     
     // ⚠️ Hint 1: Check for duplicates
     // Use 'goalList' to get all existing goals and check if 'goalInput' matches any of them.
+
     
     // ⚠️ Hint 2: Prevent duplicates
     // If a duplicate is found, display an alert to the user and don't add the goal to the list.
@@ -35,10 +36,22 @@ const addNewGoal = () => {
     // ⚠️ Hint 4: Event listener
     // The event listener that removes goals when clicked is not related to this issue.
     // Focus on preventing duplicates for now.
-    
+    const goals = goalList.getElementsByTagName('li');
+    for (let i=0; i < goals.length; i++) {
+        if (goals[i].textContent.toLowerCase() === goalInput.toLowerCase()) {
+            alert("Goal already exists. Please add a new goal.");
+            return;
+        }
+    };
+
+
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
     goalList.appendChild(newGoal);
+
+    //clears input field after adding the 
+    document.querySelector('#goalInput').value = '';
+
 };
 
 // Add event listener to the goal submit button
