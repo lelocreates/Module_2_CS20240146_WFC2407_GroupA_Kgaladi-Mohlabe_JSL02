@@ -1,6 +1,6 @@
 # Fitness goal debugging challenge
 
-The objective of this project is to improve a fitness tracker web application by preventing users from adding duplicate fitness goals to their goal list. The task involves adding code that check whether a goal is already included in the list before appending it to the Goal list. If a duplicate is detected, an alert should notify the user, and the goal should not be added. The solution requires iterating through the existing goals, comparing each with the new input, and preventing duplicate entries to improve overall user experience and maintain data integrity.
+The objective of this project is to improve a fitness tracker web application by preventing users from adding duplicate fitness goals to their goal list. The task involves adding code that check whether a goal is already included in the list before appending it to the Goal list. If a duplicate is detected, the user should be alerted, and the goal should not be added. The solution requires iterating through the existing goal list, comparing each with the new input, and preventing duplicate entries to improve overall user experience and maintain data integrity.
 
 
 
